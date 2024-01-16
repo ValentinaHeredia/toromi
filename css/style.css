@@ -86,6 +86,11 @@ header div .navbar ul li:hover > ul{
     margin: 120px 15px 10px 0px;
 }
 
+.promos{
+    width: 870px;
+}
+
+
 /* ---------CSS DE BODY-------------- */
 .wrapper {
     display: grid;
@@ -211,6 +216,9 @@ header div .navbar ul li:hover > ul{
     background-color: rgb(233, 229, 229);
 }
 
+.producto{
+
+}
 
 .bg-box p{
     text-align: center;
@@ -231,4 +239,12 @@ footer{
 
 footer div p{
     text-align: center;
+}
+
+/* -------------------------RESPONSIVE----------------------------- */
+
+@media (max-width:900px) {
+    .img-header{
+
+    }
 }
