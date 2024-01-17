@@ -90,6 +90,17 @@ header div .navbar ul li:hover > ul{
     width: 870px;
 }
 
+#menu-bar{
+    display: none;
+}
+
+header div label{
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+    display: none;
+}
+
 
 /* ---------CSS DE BODY-------------- */
 .wrapper {
@@ -123,82 +134,66 @@ header div .navbar ul li:hover > ul{
     grid-column: 5;
     grid-row: 2;
 }
-
 .seven{
     grid-column: 3;
     grid-row: 3;
 }
-
 .eight{
     grid-column: 4;
     grid-row: 3;
 }
-
 .nine{
     grid-column: 5;
     grid-row: 3;
 }
-
 .ten{
     grid-column: 3;
     grid-row: 4;
 }
-
 .eleven{
     grid-column: 4;
     grid-row: 4;
 }
-
 .twelve{
     grid-column: 5;
     grid-row: 4;
 }
-
 .thirteen{
     grid-column: 3;
     grid-row: 5;
 }
-
 .fourteen{
     grid-column: 4;
     grid-row: 5;
 }
-
 .fifteen{
     grid-column: 5;
     grid-row: 5;
 }
-
 .sixteen{
     grid-column: 3;
     grid-row: 6;
 }
-
 .seventeen{
     grid-column: 4;
     grid-row: 6;
 }
-
 .eighteen{
     grid-column: 5;
     grid-row: 6;
 }
-
 .nineteen{
     grid-column: 3;
     grid-row: 7;
 }
-
 .twenty{
     grid-column: 4;
     grid-row: 7;
 }
-
 .twenty-one{
     grid-column: 5;
     grid-row: 7;
 }
-
 .bg-box{
     background-color: #ffffff;
     border-radius: 10px;
@@ -211,40 +206,191 @@ header div .navbar ul li:hover > ul{
     justify-content: center;
     margin-top: 10px;
 }
-
 .bg-box:hover{
     background-color: rgb(233, 229, 229);
 }
-
 .producto{
-
+    width: 150px;
 }
-
 .bg-box p{
     text-align: center;
     margin-top: 10px;
     font-weight: bold;
 }
-
 .precio{
     color: green;
     font-weight: bold;
 }
-
 footer{
     background-color: #FFCAFA;
     margin-top: 25px;
     height: 75px;
 }
-
 footer div p{
     text-align: center;
 }
 
 /* -------------------------RESPONSIVE----------------------------- */
 
-@media (max-width:900px) {
-    .img-header{
+@media(max-width:991px){
+    header {
+        padding: 20px;
+    }
 
+    header div label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background-color: #FFCAFA;
+        border-top: 1px solid rgba(0,0,0,.1) ;
+        display: none;
+    }
+    header .navbar ul li{
+        width: 100%;
+        border-top: 1px solid rgba(0,0,0,.1) ;
+    }
+    header div .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background-color: #ffbef8;
+        border-top: 1px solid rgba(0,0,0,.1) ;
+    }
+    header div .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+
+    header .navbar ul li ul li ul li{
+        background-color:#ffabf7;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+@media (max-width:900px){
+    .promos{
+        width: 90%;
+    }
+    .img-header{
+        margin-top: 120px;
+    }
+}
+
+@media (max-width:780px){
+    header div .navbar ul li a{
+        font-size: 18px;
+        padding: 20px;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        grid-gap: 10px;
+    }
+    .one {
+        grid-column:2;
+        grid-row: 1;
+    }
+    .two {
+        grid-column:3;
+        grid-row:1;
+    }
+    .three {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .four {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .five {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .six {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    
+    .seven{
+        grid-column: 2;
+        grid-row: 4;
+    }
+    
+    .eight{
+        grid-column: 3;
+        grid-row: 4;
+    }
+    
+    .nine{
+        grid-column: 2;
+        grid-row: 5;
+    }
+    
+    .ten{
+        grid-column: 3;
+        grid-row: 5;
+    }
+    
+    .eleven{
+        grid-column: 2;
+        grid-row: 6;
+    }
+    
+    .twelve{
+        grid-column: 3;
+        grid-row: 6;
+    }
+    
+    .thirteen{
+        grid-column: 2;
+        grid-row: 7;
+    }
+    
+    .fourteen{
+        grid-column: 3;
+        grid-row: 7;
+    }
+    
+    .fifteen{
+        grid-column: 2;
+        grid-row: 8;
+    }
+    
+    .sixteen{
+        grid-column: 3;
+        grid-row: 8;
+    }
+    
+    .seventeen{
+        grid-column: 2;
+        grid-row: 9;
+    }
+    
+    .eighteen{
+        grid-column: 3;
+        grid-row: 9;
+    }
+    
+    .nineteen{
+        grid-column: 2;
+        grid-row: 10;
+    }
+    
+    .twenty{
+        grid-column: 2;
+        grid-row: 10;
+    }
+    
+    .twenty-one{
+        grid-column: 3;
+        grid-row: 10;
     }
 }
