@@ -27,13 +27,13 @@ header img{
     position: absolute;
     right: 15px;
     top: 15px;
+    width: 30px;
 }
 
 header div .logo{
     font-weight: bold;
     font-size: 25px;
     color: black;
-    text-align: center;
     margin-top: 5px;
 }
 
@@ -237,6 +237,14 @@ footer div p{
         padding: 20px;
     }
 
+    header div{
+        align-items: start;
+        justify-content: start;
+    }
+    header div .logo{
+        padding: 0%;
+    }
+
     header div label{
         display: initial;
     }
@@ -385,12 +393,140 @@ footer div p{
     }
     
     .twenty{
+        grid-column: 3;
+        grid-row: 10;
+    }
+    
+    .twenty-one{
+        grid-column: 2;
+        grid-row: 11;
+    }
+}
+
+@media (max-width:600px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-gap: 5px;
+    }
+    header div .logo{
+        font-weight: bold;
+        font-size: 17px;
+    }
+    header div label{
+        font-size: 13px;
+    }
+    header img{
+        width: 20px;
+    }
+    .bg-box{
+        width: 175px;
+        height: 220px;
+    }
+    .producto{
+        width: 100px;
+    }
+    .bg-box p{
+        font-size: 12px;
+    }
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .two {
+        grid-column: 2;
+        grid-row:1;
+    }
+    .three {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .four {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .five {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .six {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .seven{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .eight{
+        grid-column: 2;
+        grid-row: 4;
+    }
+    
+    .nine{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    .ten{
+        grid-column: 2;
+        grid-row: 5;
+    }
+    
+    .eleven{
+        grid-column: 1;
+        grid-row: 6;
+    }
+    
+    .twelve{
+        grid-column: 2;
+        grid-row: 6;
+    }
+    
+    .thirteen{
+        grid-column: 1;
+        grid-row: 7;
+    }
+    
+    .fourteen{
+        grid-column: 2;
+        grid-row: 7;
+    }
+    
+    .fifteen{
+        grid-column: 1;
+        grid-row: 8;
+    }
+    
+    .sixteen{
+        grid-column: 2;
+        grid-row: 8;
+    }
+    
+    .seventeen{
+        grid-column: 1;
+        grid-row: 9;
+    }
+    
+    .eighteen{
+        grid-column: 2;
+        grid-row: 9;
+    }
+    
+    .nineteen{
+        grid-column: 1;
+        grid-row: 10;
+    }
+    
+    .twenty{
         grid-column: 2;
         grid-row: 10;
     }
     
     .twenty-one{
-        grid-column: 3;
-        grid-row: 10;
+        grid-column: 1;
+        grid-row: 11;
     }
 }
