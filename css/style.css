@@ -94,13 +94,16 @@ header div .navbar ul li:hover > ul{
     display: none;
 }
 
+header div .navbar ul .celu{
+    display: none;
+}
+
 header div label{
     font-size: 20px;
     color: #000;
     cursor: pointer;
     display: none;
 }
-
 
 /* ---------CSS DE BODY-------------- */
 .wrapper {
@@ -247,6 +250,14 @@ footer div p{
 
     header div label{
         display: initial;
+    }
+
+    header div .navbar ul .celu{
+        display: initial;
+    }
+
+    header div .navbar ul .compu{
+        display: none;
     }
 
     header .navbar{
